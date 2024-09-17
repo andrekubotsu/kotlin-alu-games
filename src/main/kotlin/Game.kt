@@ -1,6 +1,8 @@
 package org.example
 
-class Game(val title: String, val cover: String) {
+import com.google.gson.annotations.SerializedName
+
+class Game(@SerializedName("title") val title: String, @SerializedName("thumb") val cover: String) {
     private val description = ""
 
     override fun toString(): String {
